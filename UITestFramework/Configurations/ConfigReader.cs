@@ -4,7 +4,7 @@ namespace UITestFramework.Configurations;
 
 public class ConfigReader
 {
-    public static AppConfig LoadConfig(string path = "/Users/admin/RiderProjects/UITestFramework/UITestFramework/Configurations/AppConfig.json")
+    public static AppConfig LoadConfig(string path = "AppConfig.json")
     {
         if (!File.Exists(path))
         {

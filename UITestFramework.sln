@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITestFramework", "UITestFramework\UITestFramework.csproj", "{FF273383-30FF-4457-8F55-82748361513B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{97293101-D843-47E6-91C1-A548243CF38A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{FF273383-30FF-4457-8F55-82748361513B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF273383-30FF-4457-8F55-82748361513B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF273383-30FF-4457-8F55-82748361513B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97293101-D843-47E6-91C1-A548243CF38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97293101-D843-47E6-91C1-A548243CF38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97293101-D843-47E6-91C1-A548243CF38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97293101-D843-47E6-91C1-A548243CF38A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -40,7 +40,7 @@ public class BaseTest
     [TearDown]
     public void Cleanup()
     {
-       Driver.Quit();
-       Driver.Dispose();
+       Driver?.Quit();
+       Driver?.Dispose();
     }
 }

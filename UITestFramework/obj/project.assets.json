@@ -396,6 +396,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helpers.dll": {}
+        }
       }
     }
   },
@@ -916,10 +926,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "path": "../Helpers/Helpers.csproj",
+      "msbuildProject": "../Helpers/Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Helpers >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "NUnit >= 4.2.2",
       "NUnit.Analyzers >= 4.4.0",
@@ -932,19 +948,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/admin/.nuget/packages/": {}
+    "C:\\Users\\Adrian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
+      "projectUniqueName": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
       "projectName": "UITestFramework",
-      "projectPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
-      "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/obj/",
+      "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
+      "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/admin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -955,7 +971,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj": {
+              "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1027,7 +1047,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

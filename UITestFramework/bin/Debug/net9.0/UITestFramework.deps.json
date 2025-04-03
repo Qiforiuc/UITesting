@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "UITestFramework/1.0.0": {
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "NUnit": "4.2.2",
           "NUnit.Analyzers": "4.4.0",
@@ -336,7 +337,15 @@
           }
         }
       },
-      "System.Reflection.Metadata/1.6.0": {}
+      "System.Reflection.Metadata/1.6.0": {},
+      "Helpers/1.0.0": {
+        "runtime": {
+          "Helpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -442,6 +451,11 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

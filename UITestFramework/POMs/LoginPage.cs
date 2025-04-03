@@ -10,7 +10,7 @@ public class LoginPage
 {
     private readonly IWebDriver _driver;
     private readonly WebDriverWait _wait;
-    protected readonly string path = "/practice-test-login/";
+    public readonly string Path = "/practice-test-login/";
 
     public LoginPage(IWebDriver driver, WebDriverWait wait)
     {
@@ -21,8 +21,7 @@ public class LoginPage
     private By _usernameField => By.Id("username");
     private By _passwordField => By.Id("password");
     private By _loginButton => By.Id("submit");
-
-
+    
     public void EnterUsername(string username)
     {
         _wait.Until(ExpectedConditions.ElementIsVisible(_usernameField)).SendKeys(username);

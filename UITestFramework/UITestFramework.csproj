@@ -25,7 +25,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Configurations\AppConfig.json">
+      <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="AppConfig.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
