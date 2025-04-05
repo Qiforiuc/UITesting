@@ -1,9 +1,9 @@
-using OpenQA.Selenium;
-using SeleniumExtras.WaitHelpers;
 using UITestFramework.Pages;
 
 namespace UITestFramework.UITests;
 
+[TestFixture]
+[Parallelizable(ParallelScope.All)]
 public class TestPracticePage : BaseTest
 {
     [Test]

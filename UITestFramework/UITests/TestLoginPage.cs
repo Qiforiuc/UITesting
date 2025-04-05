@@ -1,10 +1,12 @@
-using Helpers;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 using UITestFramework.Pages;
+using UITestFramework.POMs;
 
 namespace UITestFramework.UITests;
 
+[TestFixture]
+[Parallelizable(ParallelScope.All)]
 public class TestLoginPage : BaseTest
 {
     [Test]
