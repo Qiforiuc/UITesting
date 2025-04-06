@@ -1,0 +1,11 @@
+{
+  "PlatformName": "Android",
+  "DeviceName": "AndroidEmulatorPhone",
+  "AppPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\app.apk",
+  "AppiumServerUrls": [
+    "http://localhost:4723/",
+    "http://localhost:4724/",
+    "http://localhost:4726/"
+  ],
+  "AutomationName": "UiAutomator2"
+}

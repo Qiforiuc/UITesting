@@ -1,3 +1,4 @@
+using Allure.NUnit;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -25,9 +26,7 @@ public class BaseTest
             {
                 options.AddArgument("--headless=new");
                 options.AddArgument("--window-size=1920,1080");
-            }
-
-            driver.Value = new ChromeDriver(options);
+            } driver.Value = new ChromeDriver(options);
         }
         else
         {

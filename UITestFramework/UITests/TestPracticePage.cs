@@ -1,12 +1,20 @@
+using Allure.Net.Commons;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 using UITestFramework.Pages;
 
 namespace UITestFramework.UITests;
 
 [TestFixture]
 [Parallelizable(ParallelScope.All)]
+[AllureNUnit]
+[AllureSuite("Practice Tests")]
 public class TestPracticePage : BaseTest
 {
     [Test]
+    [AllureTag("Smoke")]
+    [AllureSeverity(SeverityLevel.critical)]
+    [AllureOwner("Adrian")]
     public void AddEntitytoFoodList()
     {
         var PracticePage = new PracticePage(Driver, Wait);

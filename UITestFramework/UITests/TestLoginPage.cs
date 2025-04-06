@@ -1,15 +1,22 @@
+using Allure.Net.Commons;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
-using UITestFramework.Pages;
 using UITestFramework.POMs;
 
 namespace UITestFramework.UITests;
 
 [TestFixture]
 [Parallelizable(ParallelScope.All)]
+[AllureNUnit]
+[AllureSuite("Login Tests")]
 public class TestLoginPage : BaseTest
 {
     [Test]
+    [AllureTag("Smoke")]
+    [AllureSeverity(SeverityLevel.critical)]
+    [AllureOwner("Adrian")]
     public void testSuccessfulLoginOnThePage()
     {
         var LoginPage = new LoginPage(Driver, Wait);
