@@ -1326,19 +1326,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adrian\\.nuget\\packages\\": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
+      "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
       "projectName": "UITestFramework",
-      "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
-      "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\obj\\",
+      "projectPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
+      "packagesPath": "/Users/admin/.nuget/packages/",
+      "outputPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/admin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -1350,8 +1350,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj": {
-              "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj"
+            "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj": {
+              "projectPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj"
             }
           }
         }
@@ -1437,7 +1437,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

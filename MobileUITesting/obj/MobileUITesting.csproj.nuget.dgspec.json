@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\MobileUITesting.csproj": {}
+    "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\MobileUITesting.csproj": {
+    "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\MobileUITesting.csproj",
+        "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj",
         "projectName": "MobileUITesting",
-        "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\MobileUITesting.csproj",
-        "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\obj\\",
+        "projectPath": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj",
+        "packagesPath": "/Users/admin/.nuget/packages/",
+        "outputPath": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/admin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
