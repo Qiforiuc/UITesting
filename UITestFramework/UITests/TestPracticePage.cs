@@ -8,7 +8,6 @@ namespace UITestFramework.UITests;
 [TestFixture]
 [Parallelizable(ParallelScope.All)]
 [AllureNUnit]
-[AllureSuite("Practice Tests")]
 public class TestPracticePage : BaseTest
 {
     [Test]

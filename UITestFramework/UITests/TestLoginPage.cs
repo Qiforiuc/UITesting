@@ -10,7 +10,6 @@ namespace UITestFramework.UITests;
 [TestFixture]
 [Parallelizable(ParallelScope.All)]
 [AllureNUnit]
-[AllureSuite("Login Tests")]
 public class TestLoginPage : BaseTest
 {
     [Test]

@@ -64,7 +64,7 @@ public class BaseTest
         options.DeviceName = EmulatorName;
         options.AutomationName = Config.AutomationName;
         options.App = Config.AppPath;
-
+        
         options.AddAdditionalAppiumOption("autoGrantPermissions", true);
         options.AddAdditionalAppiumOption("autoAcceptAlerts", true);
         options.AddAdditionalAppiumOption("appium:udid", EmulatorName);

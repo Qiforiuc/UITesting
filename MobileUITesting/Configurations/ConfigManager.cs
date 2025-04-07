@@ -5,7 +5,7 @@ namespace MobileUITesting.Configurations;
 
 public class ConfigManager
 {
-    public static AppSettings LoadSettings(string path = "C:\\Users\\Adrian\\RiderProjects\\UITesting\\MobileUITesting\\AppConfig.json")
+    public static AppSettings LoadSettings(string path = "AppConfig.json")
     {
         if (!File.Exists(path))
         {
