@@ -34,6 +34,11 @@ public class HomePageTests:BaseTest
             ".scrollIntoView(new UiSelector().text(\"Request to manage credentials\"))"));
         
         element.Click();
+
+        var titleElement = Wait.Until(ExpectedConditions.ElementIsVisible(By.Id("1")));
+        titleElement.Click();
+        
+        var nameElement = Driver.FindElement(MobileBy.AccessibilityId("1"));
         
         var okButtonElement = Wait
             .Until(ExpectedConditions.ElementIsVisible(

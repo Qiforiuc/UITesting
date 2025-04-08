@@ -6,6 +6,7 @@ using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Concurrent;
 using Allure.NUnit;
+using OpenQA.Selenium.Appium.Interfaces;
 
 namespace MobileUITesting.Tests;
 
