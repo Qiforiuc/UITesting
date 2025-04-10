@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MobileUITesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51095d65f64b559ec91bfc7403a18a76aa2b34d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee08dd4d449400c49f02eb24300c31f721b4607")]
 [assembly: System.Reflection.AssemblyProductAttribute("MobileUITesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MobileUITesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

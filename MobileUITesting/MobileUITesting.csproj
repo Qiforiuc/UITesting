@@ -25,6 +25,9 @@
       <None Update="allureConfig.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="maibank.apk">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="maibank.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>

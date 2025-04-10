@@ -86,15 +86,4 @@ public class LoginTests:BaseTest
         
         _loginPage.checkMaibLogoIsVisible();
     }
-    
-    //
-    // [Test]
-    // public void DebugLoadConfig()
-    // {
-    //     var configs = ConfigManager.LoadSettings().Devices;
-    //     foreach (var cfg in configs)
-    //     {
-    //         Console.WriteLine($"[DEBUG] Platform: {cfg.Platform}, Name: {cfg.DeviceName}, URL: {cfg.AppiumServerUrl}");
-    //     }
-    // }
 }
