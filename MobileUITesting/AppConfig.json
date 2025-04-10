@@ -1,0 +1,18 @@
+{
+  "Devices": [
+    {
+      "Platform": "Android",
+      "DeviceName": "emulator-5554",
+      "AppiumServerUrl": "http://localhost:4723/",
+      "AppPath": "maibank.apk",
+      "AutomationName": "UiAutomator2"
+    },
+    {
+      "Platform": "iOS",
+      "DeviceName": "iPhone 15 Pro",
+      "AppiumServerUrl": "http://localhost:4724/",
+      "AppPath": "maibank.zip",
+      "AutomationName": "XCUITest"
+    }
+  ]
+}

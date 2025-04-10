@@ -4,7 +4,7 @@ using System;
 using SeleniumExtras.WaitHelpers;
 
 
-namespace UITestFramework.Pages;
+namespace UITestFramework.POMs;
 
 public class LoginPage
 {

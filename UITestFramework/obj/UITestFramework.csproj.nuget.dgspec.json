@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj": {}
+    "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj": {
+    "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj",
+        "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj",
         "projectName": "Helpers",
-        "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj",
-        "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\obj\\",
+        "projectPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj",
+        "packagesPath": "/Users/admin/.nuget/packages/",
+        "outputPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/admin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -43,6 +43,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Allure.NUnit": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Appium.WebDriver": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,21 +69,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj": {
+    "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
+        "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
         "projectName": "UITestFramework",
-        "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\UITestFramework.csproj",
-        "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\UITestFramework\\obj\\",
+        "projectPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/UITestFramework.csproj",
+        "packagesPath": "/Users/admin/.nuget/packages/",
+        "outputPath": "/Users/admin/RiderProjects/UITestFramework/UITestFramework/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/admin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -85,8 +95,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj": {
-                "projectPath": "C:\\Users\\Adrian\\RiderProjects\\UITesting\\Helpers\\Helpers.csproj"
+              "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj": {
+                "projectPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj"
               }
             }
           }
@@ -107,6 +117,18 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Allure.Commons": {
+              "target": "Package",
+              "version": "[3.5.0.73, )"
+            },
+            "Allure.NUnit": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Appium.WebDriver": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
@@ -160,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
