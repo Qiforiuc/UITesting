@@ -23,15 +23,14 @@ public class LoginPage
     private readonly By backButton;
     private readonly By acceptButton;
     private readonly By restartButton;
+    private readonly By loginButton;
     
     public LoginPage(AppiumDriver driver, WebDriverWait wait, DeviceConfig config)
     {
         _driver = driver;
         _wait = wait;
 
-        var platform = config.Platform;
-
-        switch (platform)
+        switch (config.Platform)
         {
             case MobilePlatform.Android:
                 burgerMenu = MobileBy.XPath("//android.widget.ImageButton[@content-desc=\"Open\"]");
@@ -56,6 +55,7 @@ public class LoginPage
                         "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.Button");
                 acceptButton = MobileBy.XPath("//android.widget.Button");
                 restartButton = MobileBy.XPath("//android.widget.Button[@resource-id=\"android:id/button1\"]");
+                loginButton = MobileBy.Id("md.maib.maibank.debug:id/tv_login");
                 break;
             case MobilePlatform.iOS:
                 burgerMenu = MobileBy.AccessibilityId("menu icon");
@@ -68,13 +68,16 @@ public class LoginPage
                 backButton = MobileBy.AccessibilityId("Back");
                 acceptButton = MobileBy.XPath("//XCUIElementTypeButton[@name=\"Accept\"]");
                 restartButton = MobileBy.XPath("//XCUIElementTypeButton[@name=\"Restart\"]");
+                loginButton = MobileBy.XPath("//XCUIElementTypeButton[@name=\"Enter\"]");
                 break;
+            default:
+                throw new NotSupportedException($"Platform '{config.Platform}' is not supported.");
         }
     }
     
     public void pressOnBurgerMenuButton()
     {
-            _wait.Until(ExpectedConditions.ElementIsVisible(burgerMenu)).Click();
+        _wait.Until(ExpectedConditions.ElementIsVisible(burgerMenu)).Click();
     }
 
     public void pressOnDebugMenuButton()
@@ -133,5 +136,15 @@ public class LoginPage
         {
             return false;
         }
+    }
+    
+    public void pressLoginButton()
+    {
+        _wait.Until(ExpectedConditions.ElementIsVisible(loginButton)).Click();
+    }
+
+    public bool isOnCorrectScreen()
+    {
+        return _wait.Until(ExpectedConditions.ElementIsVisible(maibLogo)).Displayed;
     }
 }

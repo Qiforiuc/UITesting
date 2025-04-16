@@ -5,14 +5,20 @@
       "DeviceName": "emulator-5554",
       "AppiumServerUrl": "http://localhost:4723/",
       "AppPath": "maibank.apk",
-      "AutomationName": "UiAutomator2"
+      "AutomationName": "UiAutomator2",
+      "PhoneNumber" : "060609975",
+      "Idnp" : "0991006898381",
+      "Pin5" : "11111"
     },
     {
       "Platform": "iOS",
       "DeviceName": "iPhone 15 Pro",
       "AppiumServerUrl": "http://localhost:4724/",
       "AppPath": "maibank.zip",
-      "AutomationName": "XCUITest"
+      "AutomationName": "XCUITest",
+      "PhoneNumber" : "068846810",
+      "Idnp" : "2004026057550",
+      "Pin5" : "11111"
     }
   ]
 }

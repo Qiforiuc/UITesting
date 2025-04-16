@@ -1,11 +1,10 @@
 using Allure.NUnit;
 using MobileUITesting.Configurations;
 using MobileUITesting.DriverFactory;
-using MobileUITesting.POMs; // Correct namespace
+using MobileUITesting.POMs;
+using MobileUITesting.TestDataFactory; // Correct namespace
 using NUnit.Allure.Attributes;  // For attributes like [AllureSeverity]
 using NUnit.Framework;
-using OpenQA.Selenium;
-using SeleniumExtras.WaitHelpers;
 using SeverityLevel = Allure.Net.Commons.SeverityLevel;
 
 namespace MobileUITesting.Tests;
@@ -15,8 +14,22 @@ namespace MobileUITesting.Tests;
 [AllureNUnit]
 public class LoginTests:BaseTest
 {
+    private TermsAndConditionsPage _termsAndConditionsPage;
     private LoginPage _loginPage;
+    private PhoneNumberPage _phoneNumberPage;
+    private OtpPage _otpPage;
+    private ConfirmationTypePage _confirmationTypePage;
+    private IdnpPage _idnpPage;
+    private Pin5Page _pin5Page;
+    private MiaPopUp _miaPopUp;
+    private MaibCallCenterWarningPopUp _maibCallCenterWarningPopUp;
+    private HomePage _homePage;
+    private NavigationMenu _navigationMenu;
+    private MorePage _morePage;
+    private LogoutPopUp _logoutPopUp;
+    
     private readonly DeviceConfig _deviceConfig;
+    private User _user;
 
     public LoginTests(MobilePlatform platform, string deviceName)
         : base(GetDeviceConfig(platform, deviceName))
@@ -28,7 +41,21 @@ public class LoginTests:BaseTest
     public void SetUpTest()
     {
         base.Setup();
+        _termsAndConditionsPage = new TermsAndConditionsPage(Driver, Wait, _deviceConfig);
         _loginPage = new LoginPage(Driver, Wait, _deviceConfig);
+        _phoneNumberPage = new PhoneNumberPage(Driver, Wait, _deviceConfig);
+        _otpPage = new OtpPage(Driver, Wait, _deviceConfig);
+        _confirmationTypePage = new ConfirmationTypePage(Driver, Wait, _deviceConfig);
+        _idnpPage = new IdnpPage(Driver, Wait, _deviceConfig);
+        _pin5Page = new Pin5Page(Driver, Wait, _deviceConfig);
+        _maibCallCenterWarningPopUp = new MaibCallCenterWarningPopUp(Driver, Wait, _deviceConfig);
+        _homePage = new HomePage(Driver, Wait, _deviceConfig);
+        _miaPopUp = new MiaPopUp(Driver, Wait, _deviceConfig);
+        _navigationMenu = new NavigationMenu(Driver, Wait, _deviceConfig);
+        _morePage = new MorePage(Driver, Wait, _deviceConfig);
+        _logoutPopUp = new LogoutPopUp(Driver, Wait, _deviceConfig);
+        
+        _user = new User(_deviceConfig);
     }
     
     private static DeviceConfig GetDeviceConfig(MobilePlatform platform, string deviceName)
@@ -48,42 +75,58 @@ public class LoginTests:BaseTest
     public static IEnumerable<DeviceConfig> DeviceConfigs =>
         ConfigManager.LoadSettings().Devices;
 
-    
-    [Test(Description = $"[]Set Test Environment Backend URLs")]
+
+    [Test(Description = $"Set Test Environment Backend URLs")]
     [AllureTag("Smoke")]
     [AllureSeverity(SeverityLevel.critical)]
     [AllureOwner("Adrian")]
-    public void SetTestEnvironmentBackendURLs()
+    public void LoginByIdnp()
     {
-        if(_loginPage.checkAcceptButtonIsVisible())
+        if (_deviceConfig.Platform.Equals(MobilePlatform.Android) && _termsAndConditionsPage.isOnCorrectScreen())
         {
-            _loginPage.pressAcceptButton();
+            _termsAndConditionsPage.pressOnAcceptButton();
         }
+        
+        SetTestEnvironmentBackendURLs(_loginPage);
+        
+        Assert.That(_loginPage.isOnCorrectScreen, "The user must be on Login Page");
+        _loginPage.pressLoginButton();
+        
+        Assert.That(_phoneNumberPage.isOnCorrectScreen, "The user must be on Phone Number Page");
+        _phoneNumberPage.inputPhoneNumber(_user.PhoneNumber);
+        _phoneNumberPage.pressOnContinueButton();
+        
+        Assert.That(_otpPage.isOnCorrectScreen, "The user must be on OTP Page");
+        _otpPage.inputOtp("123456");
+        
+        Assert.That(_confirmationTypePage.isOnCorrectScreen, "The user must be on Confirmation Type Page");
+        _confirmationTypePage.pressOnLoginWithoutBiometricsButton();
+        
+        Assert.That(_idnpPage.isOnCorrectScreen, "The user must be on Login Page");
+        _idnpPage.inputIdnp(_user.Idnp);
+        _idnpPage.pressOnNextButton();
+        
+        Assert.That(_pin5Page.isOnCorrectScreen, "The user must be on Pin5 Page");
+        _pin5Page.enterPin(_deviceConfig.Pin5);
 
-        _loginPage.pressOnBurgerMenuButton();
-        _loginPage.pressOnDebugMenuButton();
-        _loginPage.pressOnBackendUrlButton();
-        _loginPage.pressOnBackendUrl();
-        
-        if(_deviceConfig.Platform == MobilePlatform.Android)
+        if (_deviceConfig.Platform.Equals(MobilePlatform.Android) && _maibCallCenterWarningPopUp.isOnCorrectScreen())
         {
-            _loginPage.pressRestartButton();
-            _loginPage.pressOnBurgerMenuButton();
-            _loginPage.pressOnDebugMenuButton();
+            _maibCallCenterWarningPopUp.pressOnYesButton();
         }
         
-        _loginPage.pressOnExternalBackendUrlButton();
-        _loginPage.pressOnExternalUrl();
-        if (_deviceConfig.Platform == MobilePlatform.Android)
+        if (_deviceConfig.Platform.Equals(MobilePlatform.Android) && _miaPopUp.isOnCorrectScreen())
         {
-            _loginPage.pressRestartButton();
+            _miaPopUp.pressOnCloseButton();
         }
+        
+        Assert.That(_homePage.isOnCorrectScreen, "The user must be on Home Page");
+    }
     
-        if (_deviceConfig.Platform == MobilePlatform.iOS)
-        {
-            _loginPage.pressBackButton();
-        }
-        
-        _loginPage.checkMaibLogoIsVisible();
+    [TearDown]
+    public void afterTest()
+    {
+        _navigationMenu.pressOnMoreButton();
+        _morePage.pressOnLogoutButton();
+        _logoutPopUp.pressOnYesButton();
     }
 }
