@@ -1,0 +1,18 @@
+Error granting permission 'camera' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'microphone' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'location' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'photos' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'contacts' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'calendar' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'reminders' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'motion' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+
+Error granting permission 'media-library' to '/Users/admin/RiderProjects/UITesting/MobileUITesting/Apps/LoanApp.app.zip': No devices are booted.
+

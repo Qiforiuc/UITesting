@@ -1,0 +1,12 @@
+{
+  "uuid": "10ae2060-cfc9-40e2-9ad0-c9ecf0754927",
+  "name": "UITestFramework.UITests.TestLoginPage.testSuccessfulLoginOnThePage",
+  "children": [
+    "cdf1cc56-9388-413e-b9db-f6e69a86a625"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746708220614,
+  "stop": 1746708225921
+}

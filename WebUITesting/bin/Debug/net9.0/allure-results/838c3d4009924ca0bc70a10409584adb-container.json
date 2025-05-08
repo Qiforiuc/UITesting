@@ -1,0 +1,12 @@
+{
+  "uuid": "2bfa141a-8845-4657-8baf-182edc591784",
+  "name": "UITestFramework.UITests.TestPracticePage.AddEntitytoFoodList",
+  "children": [
+    "065d7d03-a8c5-4fef-a7d7-43c88438f45f"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746707408815,
+  "stop": 1746707420212
+}

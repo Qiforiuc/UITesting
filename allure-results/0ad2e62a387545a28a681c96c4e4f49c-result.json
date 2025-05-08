@@ -1,0 +1,64 @@
+{
+  "uuid": "8259eab8-eb79-4bc3-bb3f-9d92b83bae1e",
+  "historyId": "faeba00f665cdcc8476ddffaa6e58f1b",
+  "testCaseId": "368c52242174470a97636da27dfda17b",
+  "fullName": "MobileUITesting:MobileUITesting.Tests.LoginTests.SetTestEnvironmentBackendURLs()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "MobileUITesting.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetTestEnvironmentBackendURLs"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTests"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "SetTestEnvironmentBackendURLs",
+  "status": "passed",
+  "stage": "finished",
+  "description": "[]Set Test Environment Backend URLs\n",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "709c602a-67fe-48c8-a2c2-5f67c36f6ee1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1746638596277,
+  "stop": 1746638602385
+}

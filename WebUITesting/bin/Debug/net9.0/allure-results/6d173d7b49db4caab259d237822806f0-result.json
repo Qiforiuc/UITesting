@@ -1,0 +1,57 @@
+{
+  "uuid": "86bc008f-8435-4e3b-b521-ece9a03a99e3",
+  "historyId": "11adc5d1e7fd0ec77d449b88dc6d5966",
+  "testCaseId": "d0f20e3903c96fd519d5d62197d1f7a4",
+  "fullName": "WebUITesting:UITestFramework.UITests.TestLoginPage.testSuccessfulLoginOnThePage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "UITestFramework.UITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testSuccessfulLoginOnThePage"
+    },
+    {
+      "name": "testClass",
+      "value": "TestLoginPage"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "testSuccessfulLoginOnThePage",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746707452177,
+  "stop": 1746707458641
+}

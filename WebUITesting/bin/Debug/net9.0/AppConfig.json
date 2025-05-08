@@ -1,0 +1,17 @@
+{
+  "Environment": "QA",
+  "BaseUrl": "https://practicetestautomation.com/",
+  "Browser": "Chrome",
+  "Headless": false,
+  "Timeouts": {
+    "ImplicitWait": 10,
+    "ExplicitWait": 30,
+    "PageLoad": 60
+  },
+  "Credentials": {
+    "Username": "student",
+    "Password": "Password123"
+  },
+  "LogLevel": "Info",
+  "ScreenshotsOnFailure": true
+}

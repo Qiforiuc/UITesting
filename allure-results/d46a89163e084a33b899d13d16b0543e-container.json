@@ -1,0 +1,12 @@
+{
+  "uuid": "1a292488-7916-4957-8c23-c4d4051b9660",
+  "name": "MobileUITesting.Tests.LoginTests(iOS,\"iPhone 15 Pro\").SetTestEnvironmentBackendURLs",
+  "children": [
+    "8259eab8-eb79-4bc3-bb3f-9d92b83bae1e"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746638596276,
+  "stop": 1746638602403
+}

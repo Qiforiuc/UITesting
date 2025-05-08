@@ -1,0 +1,71 @@
+{
+  "uuid": "c837280d-9bcc-4265-9cdd-b885d509ef53",
+  "historyId": "8bfd68b32105739075410c1d08c56a72",
+  "testCaseId": "4dfaaa3ce2542649982113e9b2f267d9",
+  "fullName": "MobileUITesting:MobileUITesting.Tests.HomePageTests.VerifyLogoIsDisplayed()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "MobileUITesting.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyLogoIsDisplayed"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTests"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "VerifyLogoIsDisplayed",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An unknown exception was encountered sending an HTTP request to the remote WebDriver server for URL http://localhost:4724/session. The exception message was: Connection refused (localhost:4724)\n  ----> System.Net.Http.HttpRequestException : Connection refused (localhost:4724)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(ICommandExecutor commandExecutor, ICapabilities appiumOptions)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout, AppiumClientConfig clientConfig)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions)\n   at OpenQA.Selenium.Appium.iOS.IOSDriver..ctor(Uri remoteAddress, DriverOptions driverOptions)\n   at MobileUITesting.DriverFactory.IOSDriverFactory.CreateDriver(DeviceConfig config, String automationName) in /Users/admin/RiderProjects/UITesting/MobileUITesting/DriverFactory/IOSDriverFactory.cs:line 28\n   at MobileUITesting.Tests.BaseTest.Setup() in /Users/admin/RiderProjects/UITesting/MobileUITesting/Base/BaseTest.cs:line 26\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--HttpRequestException\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "description": "[]Set Test Environment Backend URLs\n",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "fd61244d-2f5c-486f-b8d6-e71e72592959-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1746705552248,
+  "stop": 1746705553787
+}

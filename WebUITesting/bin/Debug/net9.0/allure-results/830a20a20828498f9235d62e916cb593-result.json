@@ -1,0 +1,57 @@
+{
+  "uuid": "422a29a4-518a-4697-a63e-f953370e5a82",
+  "historyId": "2695369ed6823f8e4d92d510a0805b4d",
+  "testCaseId": "dd4e88fb2e1e47442eb84de38437bf4f",
+  "fullName": "WebUITesting:UITestFramework.UITests.TestPracticePage.AddEntitytoFoodList()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "UITestFramework.UITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddEntitytoFoodList"
+    },
+    {
+      "name": "testClass",
+      "value": "TestPracticePage"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "AddEntitytoFoodList",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746708220615,
+  "stop": 1746708230423
+}

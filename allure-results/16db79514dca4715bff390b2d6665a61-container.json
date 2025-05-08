@@ -1,0 +1,12 @@
+{
+  "uuid": "be2193bc-602a-4548-8be4-c1526700698b",
+  "name": "MobileUITesting.Tests.HomePageTests(Android,\"emulator-5554\").VerifyLogoIsDisplayed",
+  "children": [
+    "a4e45e5d-2145-4a8e-b8bf-58cf91922911"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746708220653,
+  "stop": 1746708227729
+}

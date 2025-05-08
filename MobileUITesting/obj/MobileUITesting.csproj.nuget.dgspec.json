@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj": {}
+    "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/MobileUITesting.csproj": {}
   },
   "projects": {
-    "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj": {
+    "/Users/admin/RiderProjects/TestingFramework/Helpers/Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj",
+        "projectUniqueName": "/Users/admin/RiderProjects/TestingFramework/Helpers/Helpers.csproj",
         "projectName": "Helpers",
-        "projectPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj",
+        "projectPath": "/Users/admin/RiderProjects/TestingFramework/Helpers/Helpers.csproj",
         "packagesPath": "/Users/admin/.nuget/packages/",
-        "outputPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/obj/",
+        "outputPath": "/Users/admin/RiderProjects/TestingFramework/Helpers/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/admin/.nuget/NuGet/NuGet.Config"
@@ -73,14 +73,14 @@
         }
       }
     },
-    "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj": {
+    "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/MobileUITesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj",
+        "projectUniqueName": "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/MobileUITesting.csproj",
         "projectName": "MobileUITesting",
-        "projectPath": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj",
+        "projectPath": "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/MobileUITesting.csproj",
         "packagesPath": "/Users/admin/.nuget/packages/",
-        "outputPath": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/obj/",
+        "outputPath": "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/admin/.nuget/NuGet/NuGet.Config"
@@ -95,8 +95,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj": {
-                "projectPath": "/Users/admin/RiderProjects/UITestFramework/Helpers/Helpers.csproj"
+              "/Users/admin/RiderProjects/TestingFramework/Helpers/Helpers.csproj": {
+                "projectPath": "/Users/admin/RiderProjects/TestingFramework/Helpers/Helpers.csproj"
               }
             }
           }

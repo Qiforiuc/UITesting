@@ -1,0 +1,12 @@
+{
+  "uuid": "a66905eb-33bd-49ee-9a09-a4f9ad2f6a3a",
+  "name": "MobileUITesting.Tests.HomePageTests(iOS,\"iPhone 15 Pro\").VerifyLogoIsDisplayed",
+  "children": [
+    "265b467f-53e0-4167-a556-2851260f38e9"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746705816621,
+  "stop": 1746705828427
+}

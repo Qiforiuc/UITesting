@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZchjGGc1DSg=",
+  "dgSpecHash": "EWt9c+DNcmo=",
   "success": true,
-  "projectFilePath": "/Users/admin/RiderProjects/UITestFramework/MobileUITesting/MobileUITesting.csproj",
+  "projectFilePath": "/Users/admin/RiderProjects/TestingFramework/MobileUITesting/MobileUITesting.csproj",
   "expectedPackageFiles": [
     "/Users/admin/.nuget/packages/allure.commons/3.5.0.73/allure.commons.3.5.0.73.nupkg.sha512",
     "/Users/admin/.nuget/packages/allure.net.commons/2.12.1/allure.net.commons.2.12.1.nupkg.sha512",

@@ -1,0 +1,58 @@
+{
+  "uuid": "262caed4-0b58-448e-8d2b-cd9ca5bb3d79",
+  "historyId": "8bfd68b32105739075410c1d08c56a72",
+  "testCaseId": "4dfaaa3ce2542649982113e9b2f267d9",
+  "fullName": "MobileUITesting:MobileUITesting.Tests.HomePageTests.VerifyLogoIsDisplayed()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "MobileUITesting.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyLogoIsDisplayed"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTests"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "VerifyLogoIsDisplayed",
+  "status": "passed",
+  "stage": "finished",
+  "description": "[]Set Test Environment Backend URLs\n",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746705606614,
+  "stop": 1746705638232
+}

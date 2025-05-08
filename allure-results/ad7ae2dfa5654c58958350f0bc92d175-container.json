@@ -1,0 +1,12 @@
+{
+  "uuid": "8433adc8-61f4-4b1a-994b-8ea5d59a8d0f",
+  "name": "MobileUITesting.Tests.HomePageTests(Android,\"emulator-5554\")",
+  "children": [
+    "d3f55555-ea7b-4b4b-b0f0-2906d06c9a6b"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746707452188,
+  "stop": 1746707457301
+}

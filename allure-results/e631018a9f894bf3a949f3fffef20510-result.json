@@ -1,0 +1,65 @@
+{
+  "uuid": "bd08c06d-7784-41a3-ad8b-3366b9e53314",
+  "historyId": "8bfd68b32105739075410c1d08c56a72",
+  "testCaseId": "4dfaaa3ce2542649982113e9b2f267d9",
+  "fullName": "MobileUITesting:MobileUITesting.Tests.HomePageTests.VerifyLogoIsDisplayed()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "LT00012777"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "MobileUITesting.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyLogoIsDisplayed"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTests"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Adrian"
+    }
+  ],
+  "links": [],
+  "name": "VerifyLogoIsDisplayed",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.UnknownErrorException : An unknown server-side error occurred while processing the command. Original error: Cannot start the 'io.appium.android.apis' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command '/Users/admin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start-activity -W -n io.appium.android.apis/io.appium.android.apis.ApiDemos -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 1'; Command output: Stopping: io.appium.android.apis\nStarting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=io.appium.android.apis/.ApiDemos }\nError type 3\nError: Activity class {io.appium.android.apis/io.appium.android.apis.ApiDemos} does not exist.\n",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(ICommandExecutor commandExecutor, ICapabilities appiumOptions)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout, AppiumClientConfig clientConfig)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions)\n   at OpenQA.Selenium.Appium.Android.AndroidDriver..ctor(Uri remoteAddress, DriverOptions driverOptions)\n   at MobileUITesting.DriverFactory.AndroidDriverFactory.CreateDriver(DeviceConfig config, String automationName) in /Users/admin/RiderProjects/UITesting/MobileUITesting/DriverFactory/AndroidDriverFactory.cs:line 23\n   at MobileUITesting.Tests.BaseTest.Setup() in /Users/admin/RiderProjects/UITesting/MobileUITesting/Base/BaseTest.cs:line 26\n   at MobileUITesting.Tests.HomePageTests.SetUpTest() in /Users/admin/RiderProjects/UITesting/MobileUITesting/Tests/HomePageTests.cs:line 30\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "[]Set Test Environment Backend URLs\n",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746638732484,
+  "stop": 1746638741642
+}

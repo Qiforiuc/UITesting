@@ -1,0 +1,12 @@
+{
+  "uuid": "f82c1560-a7e3-4ff4-a048-496d80e889d8",
+  "name": "UITestFramework.UITests.TestPracticePage",
+  "children": [
+    "065d7d03-a8c5-4fef-a7d7-43c88438f45f"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746707408810,
+  "stop": 1746707420212
+}

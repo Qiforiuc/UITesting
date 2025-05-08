@@ -1,0 +1,12 @@
+{
+  "uuid": "5832fc39-a16c-4518-ac0e-00ad6d016cf4",
+  "name": "MobileUITesting.Tests.HomePageTests(iOS,\"iPhone 15 Pro\")",
+  "children": [
+    "085e94b4-9510-4993-be5d-ff3ae2d74bb8"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1746638732453,
+  "stop": 1746638740666
+}

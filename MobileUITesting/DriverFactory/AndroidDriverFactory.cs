@@ -18,8 +18,8 @@ public class AndroidDriverFactory:IDriverFactory
         options.AddAdditionalAppiumOption("autoGrantPermissions", true);
         options.AddAdditionalAppiumOption("autoAcceptAlerts", true);
         options.AddAdditionalAppiumOption("appium:udid", config.DeviceName);
-        options.AddAdditionalAppiumOption("noReset", false);
-        options.AddAdditionalAppiumOption("fullReset", true);
+        options.AddAdditionalAppiumOption("noReset", true);
+        options.AddAdditionalAppiumOption("fullReset", false);
         return new AndroidDriver(new Uri(config.AppiumServerUrl), options);
     }
 }
