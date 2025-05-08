@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "ApiTesting/1.0.0": {
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.Extensions.Configuration.Json": "9.0.4",
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "NUnit": "4.3.2",
@@ -20,6 +21,52 @@
         },
         "runtime": {
           "ApiTesting.dll": {}
+        }
+      },
+      "Allure.Net.Commons/2.12.1": {
+        "dependencies": {
+          "AspectInjector": "2.8.1",
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Collections.Immutable": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Net.Commons.dll": {
+            "assemblyVersion": "2.12.1.0",
+            "fileVersion": "2.12.1.0"
+          }
+        }
+      },
+      "Allure.NUnit/2.12.1": {
+        "dependencies": {
+          "Allure.Net.Commons": "2.12.1",
+          "NUnit": "4.3.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.NUnit.dll": {
+            "assemblyVersion": "2.12.1.0",
+            "fileVersion": "2.12.1.0"
+          }
+        }
+      },
+      "Appium.WebDriver/7.2.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.0.0"
+          }
+        }
+      },
+      "AspectInjector/2.8.1": {
+        "runtime": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {
+            "assemblyVersion": "2.8.1.0",
+            "fileVersion": "2.8.1.0"
+          }
         }
       },
       "coverlet.collector/6.0.2": {},
@@ -607,6 +654,30 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "MimeTypesMap/1.0.8": {
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -666,8 +737,41 @@
           }
         }
       },
+      "Selenium.WebDriver/4.29.0": {
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/5.0.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.0": {},
-      "System.Reflection.Metadata/1.6.0": {}
+      "System.Drawing.Common/8.0.10": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46803"
+          }
+        }
+      },
+      "System.Reflection.Metadata/1.6.0": {},
+      "Helpers/1.0.0": {
+        "dependencies": {
+          "Allure.NUnit": "2.12.1",
+          "Appium.WebDriver": "7.2.0",
+          "NUnit": "4.3.2"
+        },
+        "runtime": {
+          "Helpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -675,6 +779,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Allure.Net.Commons/2.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cix1b/xp/1nUIFUR8MpERt1Rrv9PM2C+VB3pat1g+IEB/h4Ul+7PihCDTE3VfecRob8wz5e8fQ0aHI9atf//gA==",
+      "path": "allure.net.commons/2.12.1",
+      "hashPath": "allure.net.commons.2.12.1.nupkg.sha512"
+    },
+    "Allure.NUnit/2.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L4pjgKLNaOwvLxnXS4HAfPWhCuAaAUMy66kFFJNrxUeKPwr+NSmrSN+ff0N83NsKyC1x4oiikoVuN6WCHeHvWQ==",
+      "path": "allure.nunit/2.12.1",
+      "hashPath": "allure.nunit.2.12.1.nupkg.sha512"
+    },
+    "Appium.WebDriver/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n5dxeDOFAm4fJ+kSBUnlQnJBzy9JuZik6/i0CJeU0TmXmoudmPcGdu3iuhD/pZoIP/21dr3K22T9zHWm0Q9VnA==",
+      "path": "appium.webdriver/7.2.0",
+      "hashPath": "appium.webdriver.7.2.0.nupkg.sha512"
+    },
+    "AspectInjector/2.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8BScDeaLazJVFaa2Tt9hoWLhllnxXP3Sew+l/vktdZEcgoPOsqhlDqe6GXJvy7xVkdICAbKFsrcDJ0cfrDR6Mg==",
+      "path": "aspectinjector/2.8.1",
+      "hashPath": "aspectinjector.2.8.1.nupkg.sha512"
     },
     "coverlet.collector/6.0.2": {
       "type": "package",
@@ -809,6 +941,20 @@
       "path": "microsoft.testplatform.testhost/17.13.0",
       "hashPath": "microsoft.testplatform.testhost.17.13.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
+    },
+    "MimeTypesMap/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "path": "mimetypesmap/1.0.8",
+      "hashPath": "mimetypesmap.1.0.8.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -858,6 +1004,20 @@
       "path": "restsharp.serializers.newtonsoftjson/112.1.0",
       "hashPath": "restsharp.serializers.newtonsoftjson.112.1.0.nupkg.sha512"
     },
+    "Selenium.WebDriver/4.29.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bxUeeyGPoPFqqZX/RQAmcuE8fvdi08ep9519rFpONfC/rmBemezfCbbwDKPLE0xkb/cW1asH5WbDYLXs5giVeg==",
+      "path": "selenium.webdriver/4.29.0",
+      "hashPath": "selenium.webdriver.4.29.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "path": "system.collections.immutable/5.0.0",
+      "hashPath": "system.collections.immutable.5.0.0.nupkg.sha512"
+    },
     "System.Diagnostics.DiagnosticSource/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -865,12 +1025,24 @@
       "path": "system.diagnostics.diagnosticsource/5.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
     },
+    "System.Drawing.Common/8.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MdajRp3P+FOlThgY6FBjAqnmLiVl5t2yWEC/2AsDMqx1zYbJG3G5TnscFBQ4obqcaGqvN5UnhQHSFaJFG2HftQ==",
+      "path": "system.drawing.common/8.0.10",
+      "hashPath": "system.drawing.common.8.0.10.nupkg.sha512"
+    },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

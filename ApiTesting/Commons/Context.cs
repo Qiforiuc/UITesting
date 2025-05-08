@@ -1,4 +1,5 @@
 using System.Reflection;
+using Helpers;
 
 namespace ApiTesting.Commons;
 
@@ -35,7 +36,7 @@ public sealed class Context
             var fullPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), fileName);
             if (!File.Exists(fullPath))
             {
-                Logs.Log($"Sorry, unable to find {fileName}");
+                Logger.LogError($"Sorry, unable to find {fileName}");
                 return;
             }
 

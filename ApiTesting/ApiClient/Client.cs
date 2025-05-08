@@ -1,8 +1,8 @@
 using ApiTesting.Commons;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
+using Helpers;
 using RestSharp;
 using Newtonsoft.Json;
-using JsonSerializer = Newtonsoft.Json.JsonSerializer;
+
 
 namespace ApiTesting.ApiClient;
 public class Client
@@ -22,8 +22,8 @@ public class Client
         var request = new RestRequest(endpoint, Method.Get);
 
         var response = client.Execute(request);
-        Logs.Log($"[GET] {_baseUrl + endpoint} - Status: {response.StatusCode}");
-        JsonLogger.LogFormattedJson(response.Content);
+        Logger.LogInfo($"[GET] {_baseUrl + endpoint} - Status: {response.StatusCode}");
+        Logger.LogFormattedJson(response.Content);
         T result = JsonConvert.DeserializeObject<T>(response.Content);
         return result;
     }

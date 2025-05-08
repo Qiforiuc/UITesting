@@ -24,5 +24,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">/Users/admin/.nuget/packages/nunit.analyzers/4.4.0</PkgNUnit_Analyzers>
+    <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">/Users/admin/.nuget/packages/aspectinjector/2.8.1</PkgAspectInjector>
   </PropertyGroup>
 </Project>
