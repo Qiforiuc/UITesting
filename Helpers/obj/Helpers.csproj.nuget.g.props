@@ -12,6 +12,9 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/admin/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nunit/4.3.2/build/NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit/4.3.2/build/NUnit.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">/Users/admin/.nuget/packages/aspectinjector/2.8.1</PkgAspectInjector>
   </PropertyGroup>

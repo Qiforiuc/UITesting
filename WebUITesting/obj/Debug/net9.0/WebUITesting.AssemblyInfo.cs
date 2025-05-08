@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebUITesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a8e8ac8dc6bdd40a784b71c6e2f3cb456393b04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6100956a8111358fa88ce83e285d6ccb246114c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebUITesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebUITesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

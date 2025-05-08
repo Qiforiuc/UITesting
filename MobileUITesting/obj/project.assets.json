@@ -842,7 +842,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Allure.NUnit": "2.12.1",
-          "Appium.WebDriver": "7.2.0"
+          "Appium.WebDriver": "7.2.0",
+          "NUnit": "4.3.2"
         },
         "compile": {
           "bin/placeholder/Helpers.dll": {}
