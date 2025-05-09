@@ -1,1 +1,69 @@
 /.idea/.idea.UITestFramework/.idea/vcs.xml
+
+# Ignore build output directories
+bin/
+obj/
+
+# Rider-specific files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Package directories
+packages/
+.vscode/
+.vs/
+
+# NuGet packages
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Rider logs and caches
+.idea/
+.idea_modules/
+*.iws
+out/
+
+# Coverage and test results
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+TestResults/
+
+# Temporary files
+*.tmp
+*.temp
+*.pidb
+*.svclog
+*.scc
+
+# Generated files
+*.g.*
+*.generated.cs
+*.designer.cs
+
+# Publish output
+publish/
+wwwroot/
+
+# Secrets
+appsettings.Development.json
+appsettings.*.json
